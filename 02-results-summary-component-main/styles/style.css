@@ -1,0 +1,243 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Hanken Grotesk', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/**{*/
+/*    border: 1px solid red;*/
+/*}*/
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+    }
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+    .flex {
+        min-height: 450px;
+        flex-direction: row;
+        max-height: 700px;
+        /*min-height: auto;*/
+        box-shadow:  0 5px 20px 0 rgba(141, 195, 255, 0.3);
+        border-radius: 40px;
+    }
+}
+
+.section-1 {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #503af5;
+    color: #fefff9;
+    padding: 25px 35px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+    .section-1 {
+        max-width: 300px;
+        border-radius: 40px;
+        padding: 35px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.your-result {
+    color: #f2f2f2;
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .your-result {
+        font-size: 24px;
+    }
+}
+
+.circle-gradient {
+    background: linear-gradient(180deg, #4d22c9 0%, #4636ef 100%);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .circle-gradient {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.circle-gradient + p {
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 7px;
+}
+
+@media screen and (min-width: 768px) {
+    .circle-gradient + p {
+        font-size: 26px;
+    }
+}
+
+.circle-gradient + p + p {
+    color: rgba(242, 242, 242, 0.84);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    /*.circle-gradient + p + p {*/
+    /*    font-size: 20px;*/
+    /*}*/
+}
+
+
+.score-76 {
+    font-weight: bold;
+    font-size: 54px;
+}
+
+.of-current-score {
+    color: #8476ff;
+    font-size: 18px;
+}
+
+.section-2 {
+    padding: 0 35px;
+    flex-grow: 2;
+}
+
+@media screen and (min-width: 768px) {
+    .section-2 {
+        min-width: 350px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.summary {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+    color: #37373b;
+}
+
+.section2-flex {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    /*border: 1px solid red;*/
+}
+
+.section2-flex-flex {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+
+}
+
+.section2-flex-flex img {
+    display: block;
+    /*width: 100%;*/
+    height: 25px;
+    width: 25px;
+}
+
+.section2-flex-flex p {
+    font-weight: bold;
+}
+
+.section2-flex:nth-child(2) .section2-flex-flex p {
+    font-weight: 500;
+    color: #fd94a2;
+}
+
+.section2-flex:nth-child(3) .section2-flex-flex p {
+    font-weight: 500;
+    color: #fdc46d;
+}
+
+.section2-flex:nth-child(4) .section2-flex-flex p {
+    font-weight: 500;
+    color: #34af90;
+}
+
+.section2-flex:nth-child(5) .section2-flex-flex p {
+    font-weight: 500;
+    color: #5f5fc6;
+}
+
+.section2-flex:nth-child(2) {
+    background-color: #fff6f5;
+}
+
+.section2-flex:nth-child(3) {
+    background-color: #fffbf2;
+}
+
+.section2-flex:nth-child(4) {
+    background-color: #f2fbfa;
+}
+
+.section2-flex:nth-child(5) {
+    margin-bottom: 25px;
+    background-color: #f3f3fd;
+}
+
+.score-item {
+    width: 100px;
+    vertical-align: center;
+}
+
+.score-item span {
+    font-weight: 700;
+}
+
+.continue {
+    border-radius: 999px;
+    background-color: #303b59;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 2rem;
+}
